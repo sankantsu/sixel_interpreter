@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "sixel-interpreter"
+version = "0.1.0"
+description = ""
+authors = ["Godai Takashina <azarashi.azarashi.a@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.0.0"
+matplotlib = "^3.9.0"
+
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.1"
+ruff = "^0.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+plugins = "numpy.typing.mypy_plugin"
