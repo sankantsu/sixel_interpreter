@@ -70,4 +70,6 @@ class NewLine:
 # https://github.com/python/mypy/issues/15238
 # type Command = PrintSixel | CarriageReturn | NewLine | SelectColor | SetColor
 
-Command: TypeAlias = PrintSixel | CarriageReturn | NewLine | SelectColor | SetColor | Repeat
+Command: TypeAlias = (
+    PrintSixel | CarriageReturn | NewLine | SelectColor | SetColor | Repeat
+)

@@ -2,7 +2,15 @@ from logging import getLogger
 from dataclasses import dataclass
 from .constants import SIXEL_HEIGHT
 from .color import Color
-from .command import Command, PrintSixel, SetColor, SelectColor, NewLine, CarriageReturn, Repeat
+from .command import (
+    Command,
+    PrintSixel,
+    SetColor,
+    SelectColor,
+    NewLine,
+    CarriageReturn,
+    Repeat,
+)
 
 _logger = getLogger(__name__)
 
